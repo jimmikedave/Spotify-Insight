@@ -81,7 +81,7 @@ export default class Tabs extends Component {
     
             })
         } else {
-            const status = document.getElementById("status")
+            const status = document.getElementById("current-status")
             status.innerHTML = "Please log into Spotify to view Now Playing"
             status.classList.add("status")
             
@@ -129,7 +129,7 @@ export default class Tabs extends Component {
             }
             })
         } else {
-            const status = document.getElementById("status")
+            const status = document.getElementById("50-status")
             status.innerHTML = "Please log into Spotify to view your Current Top 50 Songs"
             status.classList.add("status")
             
@@ -172,7 +172,8 @@ export default class Tabs extends Component {
                 </div>
                 <div id= "display-container" className="display-container">
                     <div id="default" className="default">
-                        <div id="status"></div>
+                        <div id="current-status"></div>
+                        <div id="50-status"></div>
                         <img src={dj}/>
                     </div>
                     <div id="current-display" style={{
