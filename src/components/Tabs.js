@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Spotify from 'spotify-web-api-js';
 import sleep from '../images/sleep.jpg';
 import dj from '../images/dj.svg';
+import cat from '../images/cat-5.svg'
 
 const spotifyWebApi = new Spotify();
 
@@ -140,6 +141,8 @@ export default class Tabs extends Component {
                     }}>
                     <h1>Show Top 50 Songs</h1>
                     </button>
+                    {/* <br/>
+                    <img src={cat}/> */}
                 </div>
                 <div id= "display-container" className="display-container">
                     <div id="default" class="default">

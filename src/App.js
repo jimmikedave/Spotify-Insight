@@ -3,6 +3,7 @@ import Spotify from 'spotify-web-api-js';
 import Header from './components/Header';
 import Tabs from './components/Tabs';
 
+
 const spotifyWebApi = new Spotify();
 
 class App extends Component {
