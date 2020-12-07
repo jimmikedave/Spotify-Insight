@@ -82,7 +82,7 @@ export default class Tabs extends Component {
             })
         } else {
             const status = document.getElementById("status")
-            status.innerHTML = "Please log in to view Now Playing"
+            status.innerHTML = "Please log into Spotify to view Now Playing"
             status.classList.add("status")
             
 
@@ -130,7 +130,7 @@ export default class Tabs extends Component {
             })
         } else {
             const status = document.getElementById("status")
-            status.innerHTML = "Please log in to view your Current Top 50 Songs"
+            status.innerHTML = "Please log into Spotify to view your Current Top 50 Songs"
             status.classList.add("status")
             
 
