@@ -23,7 +23,8 @@ export default class Tabs extends Component {
           top50: {
             name: [],
             artist: []
-          }
+          },
+          loggedIn: params.access_token ? true : false
         }
         // This allows you to access the spotify API
         if(params.access_token){
@@ -43,77 +44,102 @@ export default class Tabs extends Component {
 
     // Retrieve the current song playing.
     getNowPlaying() {
-        spotifyWebApi.getMyCurrentPlaybackState()
-        .then((response) => {
-            const currentPlaying = document.getElementById('current-display');
-            const topList = document.getElementById("top50-list");
-            const displayContainer = document.getElementById("display-container");
-            const defaultImage = document.getElementById("default");
-            
-            currentPlaying.style.display = "block"
-            topList.style.display = "none";
-            displayContainer.style.display = "block";
-            defaultImage.style.display = "none";
-            
-        if(response === '') {
-            this.setState({
-            nowPlaying: {
-                name: "You are not listening to anything at the moment :(",
-                artist: "Go throw something on!",
-                device: "Nothing",
-                volume: "*cricket*",
-                image: sleep
+        if(this.state.loggedIn) {
+            spotifyWebApi.getMyCurrentPlaybackState()
+            .then((response) => {
+                const currentPlaying = document.getElementById('current-display');
+                const topList = document.getElementById("top50-list");
+                const displayContainer = document.getElementById("display-container");
+                const defaultImage = document.getElementById("default");
+                
+                currentPlaying.style.display = "block"
+                topList.style.display = "none";
+                displayContainer.style.display = "block";
+                defaultImage.style.display = "none";
+                
+            if(response === '') {
+                this.setState({
+                nowPlaying: {
+                    name: "You are not listening to anything at the moment :(",
+                    artist: "Go throw something on!",
+                    device: "Nothing",
+                    volume: "*cricket*",
+                    image: sleep
+                }
+                })
+            } else {
+                this.setState({
+                nowPlaying: {
+                    artist: response.item.artists[0].name,
+                    name: response.item.name,
+                    image: response.item.album.images[0].url,
+                    device: response.device.name,
+                    volume: response.device.volume_percent
+                }
+                })
             }
+    
             })
         } else {
-            this.setState({
-            nowPlaying: {
-                artist: response.item.artists[0].name,
-                name: response.item.name,
-                image: response.item.album.images[0].url,
-                device: response.device.name,
-                volume: response.device.volume_percent
-            }
-            })
-        }
+            const status = document.getElementById("status")
+            status.innerHTML = "Please log in to view Now Playing"
+            status.classList.add("status")
+            
 
-        })
+            setTimeout(() => {
+                status.classList.remove("status")
+                status.innerHTML = ""
+            }, 3000)
+        }
     }
 
     // Retrieve an array of the user's top 50 tracks.
     getMyTopTracks() {
-        spotifyWebApi.getMyTopTracks({limit: 50})
-        .then((response) => {      
-        var i;
-        let top50List = [];
-        let top50Artist = [];
-        const topList = document.getElementById("top50-list");
-        const currentPlaying = document.getElementById("current-display");
-        const defaultImage = document.getElementById("default");
-
-        topList.style.display = "block";
-        currentPlaying.style.display = "none";
-        defaultImage.style.display = "none";
-
-        if(this.state.top50.name.length === 0) {
-            for(i = 0; i < response.items.length; i++) {
-            top50List.push(response.items[i].name)
-            top50Artist.push(response.items[i].artists[0].name)
-            }
+        if(this.state.loggedIn) {
+            spotifyWebApi.getMyTopTracks({limit: 50})
+            .then((response) => {      
+            var i;
+            let top50List = [];
+            let top50Artist = [];
+            const topList = document.getElementById("top50-list");
+            const currentPlaying = document.getElementById("current-display");
+            const defaultImage = document.getElementById("default");
     
-            if(top50List.length === 50 && top50Artist.length === 50) {
-            this.setState({
-                top50: {
-                name: top50List,
-                artist: top50Artist
+            topList.style.display = "block";
+            currentPlaying.style.display = "none";
+            defaultImage.style.display = "none";
+    
+            if(this.state.top50.name.length === 0) {
+                for(i = 0; i < response.items.length; i++) {
+                top50List.push(response.items[i].name)
+                top50Artist.push(response.items[i].artists[0].name)
                 }
+        
+                if(top50List.length === 50 && top50Artist.length === 50) {
+                this.setState({
+                    top50: {
+                    name: top50List,
+                    artist: top50Artist
+                    }
+                })
+                for(i = 0; i < this.state.top50.name.length; i++) {
+                    this.createListItem(this.state.top50.name[i], this.state.top50.artist[i])
+                }
+                }
+            }
             })
-            for(i = 0; i < this.state.top50.name.length; i++) {
-                this.createListItem(this.state.top50.name[i], this.state.top50.artist[i])
-            }
-            }
+        } else {
+            const status = document.getElementById("status")
+            status.innerHTML = "Please log in to view your Current Top 50 Songs"
+            status.classList.add("status")
+            
+
+            setTimeout(() => {
+                status.classList.remove("status")
+                status.innerHTML = ""
+            }, 3000)
         }
-        })
+        
     }
 
     // Turns the top 50 array into an ordered list.  
@@ -145,7 +171,8 @@ export default class Tabs extends Component {
                     <img src={cat}/> */}
                 </div>
                 <div id= "display-container" className="display-container">
-                    <div id="default" class="default">
+                    <div id="default" className="default">
+                        <div id="status"></div>
                         <img src={dj}/>
                     </div>
                     <div id="current-display" style={{

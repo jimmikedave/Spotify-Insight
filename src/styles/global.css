@@ -121,3 +121,27 @@ body {
   height: 275px;
   padding-top: 20%;
 }
+
+.status {
+  padding-top: 20px;
+  animation: status 3s ease forwards;
+  font-size: 40px;
+  font-weight: 1000;
+}
+
+@keyframes status {
+  0% {
+      opactiy: 1;
+      pointer-events: all;
+  }
+
+  90% {
+      opacity: 1;
+      pointer-events: all;
+  }
+
+  100% {
+      opacity: 0;
+      pointer-events: none;
+  }
+}

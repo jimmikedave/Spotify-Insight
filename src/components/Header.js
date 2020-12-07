@@ -32,7 +32,7 @@ export default class Header extends Component {
         return(
             <div className="header">
                 <ul className="nav-bar" id="nav-bar">
-                    <li class="title"><img src={dj}/><h1>Spotify Insight</h1></li>
+                    <li className="title"><img src={dj}/><h1>Spotify Insight</h1></li>
                     { this.state.loggedIn ? 
                     <li><a href='http://localhost:3000'><button><h3>Logout of Spotify</h3></button></a></li>
                     :
