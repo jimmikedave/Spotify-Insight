@@ -1,0 +1,120 @@
+/* Page */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  text-align: center;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+  
+/* Navigation Bar */
+.header {
+  width: 100%;
+  background: #1dcf8b;
+  color:#cf1d85;
+  box-shadow: 5px 5px #072c1e;
+  min-height: 30px;
+  position: fixed;
+  text-align: center;
+  text-shadow: 1px 1px#79124e, 
+                2px 2px#79124e, 
+                3px 3px#79124e;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none; 
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1300px;
+}
+
+.nav-bar button {
+  margin-top: 10px;
+  margin-right: 20px;
+  background-color: #cf1d85;
+  color: #6ee2b5;
+  box-shadow: 3px 3px #3a0925;
+  border-radius: 5px;
+  cursor: pointer; 
+  outline: none;
+}
+
+.nav-bar button:hover {
+  background-color: #cf1d85de;
+  color: #1dcf8b;
+}
+
+
+.title {
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.title img {
+  height: 55px;
+  width: 55px;
+  margin-top: 12px;
+  padding-right: 20px;
+}
+
+/* Tab Container */
+.tab {
+  padding-top: 130px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0;
+}
+
+/* Side Buttons */
+.btn-group button {
+  background-color: #cf1d85; 
+  box-shadow: 5px 5px #3a0925;
+  color:#6ee2b5; 
+  cursor: pointer; 
+  width: 450px; 
+  height: 75px;
+  margin: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.btn-group button:hover {
+  background-color: #cf1d85de;
+  color: #1dcf8b;;
+}
+
+/* Display Container */
+.display-container {
+  text-align: center;
+  background-color: #1dcf8b;
+  box-shadow: 2.5px 5px #072c1e;
+  width: 1100px;
+  height: 800px;
+  max-width: 1100px;
+  max-height: 800px;
+  border-radius: 3px;
+}
+
+.current-display {
+  padding-top: 40px;
+}
+
+.top50-list {
+  max-width: 1100px;
+  max-height: 780px;
+  overflow: auto;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  display: none;
+}
+
+.default img{
+  width: 275px;
+  height: 275px;
+  padding-top: 20%;
+}
