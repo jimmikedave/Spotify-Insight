@@ -47,11 +47,13 @@ export default class Tabs extends Component {
             const currentPlaying = document.getElementById('current-display');
             const topList = document.getElementById("top50-list");
             const displayContainer = document.getElementById("display-container");
+            const defaultImage = document.getElementById("default");
             
             currentPlaying.style.display = "block"
             topList.style.display = "none";
             displayContainer.style.display = "block";
-            console.log(response)
+            defaultImage.style.display = "none";
+            
         if(response === '') {
             this.setState({
             nowPlaying: {
@@ -86,9 +88,11 @@ export default class Tabs extends Component {
         let top50Artist = [];
         const topList = document.getElementById("top50-list");
         const currentPlaying = document.getElementById("current-display");
+        const defaultImage = document.getElementById("default");
 
         topList.style.display = "block";
         currentPlaying.style.display = "none";
+        defaultImage.style.display = "none";
 
         if(this.state.top50.name.length === 0) {
             for(i = 0; i < response.items.length; i++) {
@@ -138,7 +142,7 @@ export default class Tabs extends Component {
                     </button>
                 </div>
                 <div id= "display-container" className="display-container">
-                    <div class="default">
+                    <div id="default" class="default">
                         <img src={dj}/>
                     </div>
                     <div id="current-display" style={{
