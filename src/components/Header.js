@@ -34,7 +34,7 @@ export default class Header extends Component {
                 <ul className="nav-bar" id="nav-bar">
                     <li className="title"><img src={dj}/><h1>Spotify Insight</h1></li>
                     { this.state.loggedIn ? 
-                    <li><a href='http://localhost:3000'><button><h2>Log out</h2></button></a></li>
+                    <li><a href='https://jimmikedave.github.io/Spotify-Insight/'><button><h2>Log out</h2></button></a></li>
                     :
                     <li><a href='https://spotify-user-info-backend.herokuapp.com/login'><button><h2>Log in</h2></button></a></li>
                     }  
