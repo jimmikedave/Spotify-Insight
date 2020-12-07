@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Spotify-Insight/static/css/main.1ae3b44d.chunk.css",
+    "main.js": "/Spotify-Insight/static/js/main.0d6ddd9e.chunk.js",
+    "main.js.map": "/Spotify-Insight/static/js/main.0d6ddd9e.chunk.js.map",
+    "runtime-main.js": "/Spotify-Insight/static/js/runtime-main.28381178.js",
+    "runtime-main.js.map": "/Spotify-Insight/static/js/runtime-main.28381178.js.map",
+    "static/js/2.20a6abcc.chunk.js": "/Spotify-Insight/static/js/2.20a6abcc.chunk.js",
+    "static/js/2.20a6abcc.chunk.js.map": "/Spotify-Insight/static/js/2.20a6abcc.chunk.js.map",
+    "index.html": "/Spotify-Insight/index.html",
+    "precache-manifest.2c5e6a2390efe8101bab10827476e9b0.js": "/Spotify-Insight/precache-manifest.2c5e6a2390efe8101bab10827476e9b0.js",
+    "service-worker.js": "/Spotify-Insight/service-worker.js",
+    "static/css/main.1ae3b44d.chunk.css.map": "/Spotify-Insight/static/css/main.1ae3b44d.chunk.css.map",
+    "static/js/2.20a6abcc.chunk.js.LICENSE.txt": "/Spotify-Insight/static/js/2.20a6abcc.chunk.js.LICENSE.txt",
+    "static/media/cat-5.svg": "/Spotify-Insight/static/media/cat-5.fd18543b.svg",
+    "static/media/dj.svg": "/Spotify-Insight/static/media/dj.664c716d.svg",
+    "static/media/sleep.jpg": "/Spotify-Insight/static/media/sleep.563190f5.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.28381178.js",
+    "static/js/2.20a6abcc.chunk.js",
+    "static/css/main.1ae3b44d.chunk.css",
+    "static/js/main.0d6ddd9e.chunk.js"
+  ]
+}
