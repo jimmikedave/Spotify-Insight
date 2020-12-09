@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c39b28ce5e2e5c96477a160074b8d968",
+    "revision": "67f8bffccc7866ae5d02952f2806e8f9",
     "url": "/Spotify-Insight/index.html"
   },
   {
-    "revision": "52cf26bf551605b76189",
-    "url": "/Spotify-Insight/static/css/main.2a7d7c8e.chunk.css"
+    "revision": "a5bef5b5f0adb51d7fd5",
+    "url": "/Spotify-Insight/static/css/main.425fd9e5.chunk.css"
   },
   {
     "revision": "cbbadbbdbb4ab54e4241",
@@ -16,16 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Spotify-Insight/static/js/2.20a6abcc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "52cf26bf551605b76189",
-    "url": "/Spotify-Insight/static/js/main.99a3138f.chunk.js"
+    "revision": "a5bef5b5f0adb51d7fd5",
+    "url": "/Spotify-Insight/static/js/main.e6887550.chunk.js"
   },
   {
     "revision": "6a7b8fbf192598e7e0a3",
     "url": "/Spotify-Insight/static/js/runtime-main.28381178.js"
-  },
-  {
-    "revision": "fd18543bef9de9316d954eafe7a33270",
-    "url": "/Spotify-Insight/static/media/cat-5.fd18543b.svg"
   },
   {
     "revision": "664c716d93b55fd3da5b7ad99f390867",
