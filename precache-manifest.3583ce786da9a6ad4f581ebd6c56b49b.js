@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a7aeec22c5618dbb8d510f3240cb85cc",
+    "revision": "f21b6a447cd9f601e0474c3650de36df",
     "url": "/Spotify-Insight/index.html"
   },
   {
-    "revision": "0534ff0e4fb39e3d80b3",
-    "url": "/Spotify-Insight/static/css/main.657a0c60.chunk.css"
+    "revision": "f03d9f748a6634ceb190",
+    "url": "/Spotify-Insight/static/css/main.2c5208c0.chunk.css"
   },
   {
     "revision": "cbbadbbdbb4ab54e4241",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Spotify-Insight/static/js/2.20a6abcc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0534ff0e4fb39e3d80b3",
+    "revision": "f03d9f748a6634ceb190",
     "url": "/Spotify-Insight/static/js/main.99a3138f.chunk.js"
   },
   {
