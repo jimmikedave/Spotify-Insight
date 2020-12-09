@@ -133,8 +133,11 @@ Display Container
   font-weight: 1000;
 }
 
-#cover {
-  width: 350;
+#cover img{
+  width: 275px;
+  height: 275px;
+  max-width: 275px;
+  max-height: 275px;
 }
 
 @keyframes status {
@@ -178,7 +181,7 @@ Display Container
 
   .top50-list {
     max-width: 800px;
-    max-height: 550px;
+    max-height: 483px;
     overflow: auto;
     padding-left: 30px;
     padding-bottom: 20px;
@@ -191,8 +194,11 @@ Display Container
     padding-top: 20%;
   }
 
-  #cover {
-    width: 150;
+  #cover img{
+    width: 220px;
+    height: 220px;
+    max-width: 220px;
+    max-height: 220px;
   }
 
   .btn-group button {
