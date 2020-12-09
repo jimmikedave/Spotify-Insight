@@ -184,8 +184,8 @@ export default class Tabs extends Component {
                             <h1>Now Playing: {this.state.nowPlaying.name}</h1>
                             <h2> By: {this.state.nowPlaying.artist}</h2>
                         </div>
-                        <div>
-                            <img src={this.state.nowPlaying.image} style={{width:350}}/>
+                        <div id="cover">
+                            <img src={this.state.nowPlaying.image} />
                         </div>
                         <div>
                             <h3>Listening On: {this.state.nowPlaying.device}</h3>

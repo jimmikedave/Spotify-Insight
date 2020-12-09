@@ -133,6 +133,10 @@ Display Container
   font-weight: 1000;
 }
 
+#cover {
+  width: 350;
+}
+
 @keyframes status {
   0% {
       opactiy: 1;
@@ -182,9 +186,13 @@ Display Container
   }
 
   .default img{
-    width: 75px;
-    height: 75px;
+    width: 175px;
+    height: 175px;
     padding-top: 20%;
+  }
+
+  #cover {
+    width: 150;
   }
 
   .btn-group button {
