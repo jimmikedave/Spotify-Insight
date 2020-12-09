@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Spotify-Insight/static/css/main.dc57e23a.chunk.css",
-    "main.js": "/Spotify-Insight/static/js/main.e6887550.chunk.js",
-    "main.js.map": "/Spotify-Insight/static/js/main.e6887550.chunk.js.map",
+    "main.css": "/Spotify-Insight/static/css/main.0296b97e.chunk.css",
+    "main.js": "/Spotify-Insight/static/js/main.7a5362ca.chunk.js",
+    "main.js.map": "/Spotify-Insight/static/js/main.7a5362ca.chunk.js.map",
     "runtime-main.js": "/Spotify-Insight/static/js/runtime-main.28381178.js",
     "runtime-main.js.map": "/Spotify-Insight/static/js/runtime-main.28381178.js.map",
     "static/js/2.20a6abcc.chunk.js": "/Spotify-Insight/static/js/2.20a6abcc.chunk.js",
     "static/js/2.20a6abcc.chunk.js.map": "/Spotify-Insight/static/js/2.20a6abcc.chunk.js.map",
     "index.html": "/Spotify-Insight/index.html",
-    "precache-manifest.afa4e6f9e23298b04439ec97561dc817.js": "/Spotify-Insight/precache-manifest.afa4e6f9e23298b04439ec97561dc817.js",
+    "precache-manifest.ba83e553a973c6c5b25c57e87914493c.js": "/Spotify-Insight/precache-manifest.ba83e553a973c6c5b25c57e87914493c.js",
     "service-worker.js": "/Spotify-Insight/service-worker.js",
-    "static/css/main.dc57e23a.chunk.css.map": "/Spotify-Insight/static/css/main.dc57e23a.chunk.css.map",
+    "static/css/main.0296b97e.chunk.css.map": "/Spotify-Insight/static/css/main.0296b97e.chunk.css.map",
     "static/js/2.20a6abcc.chunk.js.LICENSE.txt": "/Spotify-Insight/static/js/2.20a6abcc.chunk.js.LICENSE.txt",
     "static/media/dj.svg": "/Spotify-Insight/static/media/dj.664c716d.svg",
     "static/media/sleep.jpg": "/Spotify-Insight/static/media/sleep.563190f5.jpg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.28381178.js",
     "static/js/2.20a6abcc.chunk.js",
-    "static/css/main.dc57e23a.chunk.css",
-    "static/js/main.e6887550.chunk.js"
+    "static/css/main.0296b97e.chunk.css",
+    "static/js/main.7a5362ca.chunk.js"
   ]
 }
