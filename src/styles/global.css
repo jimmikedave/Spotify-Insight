@@ -1,4 +1,6 @@
-/* Page */
+/*******************
+Global
+********************/
 body {
   margin: 0;
   padding: 0;
@@ -7,7 +9,9 @@ body {
   font-family: Tahoma, Geneva, sans-serif;
 }
   
-/* Navigation Bar */
+/*******************
+Navigation Bar
+********************/
 .header {
   width: 100%;
   background: #1dcf8b;
@@ -57,7 +61,9 @@ body {
   padding-right: 20px;
 }
 
-/* Tab Container */
+/*******************
+Tab Container
+********************/
 .tab {
   padding-top: 130px;
   text-align: center;
@@ -67,7 +73,9 @@ body {
   margin: 0;
 }
 
-/* Side Buttons */
+/*******************
+Side Buttons
+********************/
 .btn-group button {
   background-color: #cf1d85; 
   box-shadow: 5px 5px #3a0925;
@@ -85,14 +93,9 @@ body {
   color: #1dcf8b;;
 }
 
-.btn-group img {
-  margin-top: 60%;
-  margin-left: 60%;
-  width: 10%;
-  height: 5%;
-}
-
-/* Display Container */
+/*******************
+Display Container
+********************/
 .display-container {
   text-align: center;
   background-color: #1dcf8b;
@@ -123,7 +126,6 @@ body {
   padding-top: 20%;
 }
 
-
 .status {
   padding-top: 20px;
   animation: status 3s ease forwards;
@@ -145,5 +147,68 @@ body {
   100% {
       opacity: 0;
       pointer-events: none;
+  }
+}
+
+/*******************
+1700px
+********************/
+
+@media (max-width: 1700px) {
+  body {
+    background: black;
+  }
+}
+
+/*******************
+1400px
+********************/
+@media (max-width: 1400px) {
+
+  .display-container {
+    width: 800px;
+    height: 500px;
+    max-width: 800px;
+    max-height: 500px;
+  }
+
+  .top50-list {
+    max-width: 800px;
+    max-height: 580px;
+    overflow: auto;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    display: none;
+  }
+
+  .default img{
+    width: 175px;
+    height: 175px;
+    padding-top: 20%;
+  }
+
+  .btn-group button {
+    width: 400px; 
+    height: 70px;
+    margin: 10px;
+  }
+
+  .header {
+    min-height: 25px;
+  }
+  
+  .nav-bar button {
+    width: 125px;
+    height: 58px;
+  }
+}
+
+/*******************
+720px
+********************/
+
+@media (max-width: 720px) {
+  body {
+    background: white;
   }
 }
